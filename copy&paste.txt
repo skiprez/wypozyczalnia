@@ -1,0 +1,124 @@
+<div class="bigbox">
+            <div class="box">
+                <img src="img/astra.jpg" class="img">
+                    <p class="smalltext">
+                    <?php
+                    
+                    $sql = "SELECT `marka`, `model` FROM `samochody` WHERE id_samochodu=1";
+                    $result = $conn->query($sql);
+                    if ($result->num_rows > 0) {
+                        while($row = $result->fetch_assoc()) {
+                            echo $row["marka"]." ".$row["model"];
+                        }
+                    } else {
+                        echo "0 results";
+                    }
+                    
+                    ?>
+                    </p>
+                <input type="button" value="Wypożycz" class="button" class="butwyp">
+            </div>
+
+            <div class="box">
+                <img src="img/clk.jpg" class="img">
+                    <p class="smalltext">
+                    <?php
+                    
+                        $sql = "SELECT `marka`, `model` FROM `samochody` WHERE id_samochodu=2";
+                        $result = $conn->query($sql);
+                        if ($result->num_rows > 0) {
+                            while($row = $result->fetch_assoc()) {
+                            echo $row["marka"]." ".$row["model"];
+                            }
+                        } else {
+                            echo "0 results";
+                        }
+                    
+                    ?>
+                    </p>
+                <input type="button" value="Wypożycz" class="button" class="butwyp">
+            </div>
+
+            <div class="box">
+                <img src="img/a4.jpg" class="img">
+                    <p class="smalltext">
+                    <?php
+                    
+                        $sql = "SELECT `marka`, `model` FROM `samochody` WHERE id_samochodu=3";
+                        $result = $conn->query($sql);
+                        if ($result->num_rows > 0) {
+                            while($row = $result->fetch_assoc()) {
+                            echo $row["marka"]." ".$row["model"];
+                            }
+                        } else {
+                            echo "0 results";
+                        }
+                    
+                    ?>
+                    </p>
+                <input type="button" value="Wypożycz" class="button" class="butwyp">
+            </div>
+        </div>
+
+        <!-- LOWER DIV -->
+        <div class="bixbox">
+            <div class="box">
+                <img src="img/civic.jpg" class="img">
+                    <p class="smalltext">
+                    <?php
+                    
+                    $sql = "SELECT `marka`, `model` FROM `samochody` WHERE id_samochodu=4";
+                    $result = $conn->query($sql);
+                    if ($result->num_rows > 0) {
+                        while($row = $result->fetch_assoc()) {
+                            echo $row["marka"]." ".$row["model"];
+                        }
+                    } else {
+                        echo "0 results";
+                    }
+                    
+                    ?>
+                    </p>
+                <input type="button" value="Wypożycz" class="button" class="butwyp">
+            </div>
+
+            <div class="box">
+                <img src="img/clio.jpg" class="img">
+                    <p class="smalltext">
+                    <?php
+                    
+                    $sql = "SELECT `marka`, `model` FROM `samochody` WHERE id_samochodu=5";
+                    $result = $conn->query($sql);
+                    if ($result->num_rows > 0) {
+                        while($row = $result->fetch_assoc()) {
+                            echo $row["marka"]." ".$row["model"];
+                        }
+                    } else {
+                        echo "0 results";
+                    }
+                    
+                    ?>
+                    </p>
+                <input type="button" value="Wypożycz" class="button" class="butwyp">
+            </div>
+
+            <div class="box">
+                <img src="img/corsa.jpg" class="img">
+                    <p class="smalltext">
+                    <?php
+                    
+                    $sql = "SELECT `marka`, `model` FROM `samochody` WHERE id_samochodu=6";
+                    $result = $conn->query($sql);
+                    if ($result->num_rows > 0) {
+                        while($row = $result->fetch_assoc()) {
+                            echo $row["marka"]." ".$row["model"];
+                        }
+                    } else {
+                        echo "0 results";
+                    }
+                    
+                    ?>
+                    </p>
+                <input type="button" value="Wypożycz" class="button" class="butwyp">
+            </div>
+        </div>
